@@ -10,7 +10,7 @@ import UIKit
 import Contacts
 
 class ViewController: UIViewController, UITableViewDataSource, UITableViewDelegate{
-
+    
     @IBOutlet weak var tableView: UITableView!
     
     var contactStore = CNContactStore()
@@ -54,7 +54,19 @@ class ViewController: UIViewController, UITableViewDataSource, UITableViewDelega
         tableView.reloadData()
         print(contacts.first?.givenName)
     }
-    
+    func tableView(_ tableView: UITableView, didSelectRowAt indexPath: IndexPath) {
+        performSegue(withIdentifier: "segue", sender: self)
+    }
+    override func prepare(for segue: UIStoryboardSegue, sender: Any?) {
+        if segue.identifier == "segue",
+            let destination = segue.destination as? NewViewController,
+            let index = tableView.indexPathForSelectedRow?.row
+        {
+            destination.savedName = contacts[index].givenName
+        }
+        
+        
+    }
     
     
 }
