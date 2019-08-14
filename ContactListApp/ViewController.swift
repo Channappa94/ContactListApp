@@ -22,6 +22,8 @@ class ViewController: UIViewController, UITableViewDataSource, UITableViewDelega
         contactStore.requestAccess(for: .contacts) { (success, error) in
             if success{
                 print("Authorization succesful")
+            }else{
+                print("Authorization Denied")
             }
         }
         fetchContacts()

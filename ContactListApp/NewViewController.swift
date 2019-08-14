@@ -24,12 +24,23 @@ class NewViewController: UIViewController, UINavigationControllerDelegate, UIIma
     }
     
     @IBAction func importImageAction(_ sender: Any) {
-        
-        let imageController = UIImagePickerController()
-        imageController.delegate = self
-        imageController.sourceType = UIImagePickerController.SourceType.camera
-        imageController.allowsEditing = false
-        self.present(imageController, animated: true, completion: nil)
+        let alert = UIAlertController(title: "Select One", message: "Click below", preferredStyle: .actionSheet)
+        alert.addAction(UIAlertAction(title: "Camera", style: .default, handler: { (UIAlertAction) in
+            let imageController = UIImagePickerController()
+            imageController.delegate = self
+            imageController.sourceType = UIImagePickerController.SourceType.camera
+            imageController.allowsEditing = false
+            self.present(imageController, animated: true, completion: nil)        }))
+        alert.addAction(UIAlertAction(title: "Photo Library", style: .default, handler: {(UIAlertAction) in
+            let imageController = UIImagePickerController()
+            imageController.delegate = self
+            imageController.sourceType = UIImagePickerController.SourceType.photoLibrary
+            imageController.allowsEditing = false
+            self.present(imageController, animated: true, completion: nil)
+            
+        }))
+        present(alert, animated: true, completion: nil)
+
     }
     
     
