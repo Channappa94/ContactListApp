@@ -13,6 +13,7 @@
 		490E15F1230208DB00900A03 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 490E15F0230208DB00900A03 /* Assets.xcassets */; };
 		490E15F4230208DB00900A03 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 490E15F2230208DB00900A03 /* LaunchScreen.storyboard */; };
 		490E15FC230209FB00900A03 /* ContactStruct.swift in Sources */ = {isa = PBXBuildFile; fileRef = 490E15FB230209FB00900A03 /* ContactStruct.swift */; };
+		490E16002302811A00900A03 /* NewViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 490E15FF2302811A00900A03 /* NewViewController.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -24,6 +25,7 @@
 		490E15F3230208DB00900A03 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		490E15F5230208DB00900A03 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		490E15FB230209FB00900A03 /* ContactStruct.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ContactStruct.swift; sourceTree = "<group>"; };
+		490E15FF2302811A00900A03 /* NewViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NewViewController.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -58,6 +60,7 @@
 			children = (
 				490E15E9230208DA00900A03 /* AppDelegate.swift */,
 				490E15EB230208DA00900A03 /* ViewController.swift */,
+				490E15FF2302811A00900A03 /* NewViewController.swift */,
 				490E15FB230209FB00900A03 /* ContactStruct.swift */,
 				490E15ED230208DA00900A03 /* Main.storyboard */,
 				490E15F0230208DB00900A03 /* Assets.xcassets */,
@@ -141,6 +144,7 @@
 				490E15EC230208DA00900A03 /* ViewController.swift in Sources */,
 				490E15FC230209FB00900A03 /* ContactStruct.swift in Sources */,
 				490E15EA230208DA00900A03 /* AppDelegate.swift in Sources */,
+				490E16002302811A00900A03 /* NewViewController.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -287,13 +291,13 @@
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				CODE_SIGN_STYLE = Automatic;
-				DEVELOPMENT_TEAM = FP7V2F7LFP;
+				DEVELOPMENT_TEAM = 373573836D;
 				INFOPLIST_FILE = ContactListApp/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
 					"@executable_path/Frameworks",
 				);
-				PRODUCT_BUNDLE_IDENTIFIER = com.phani.ContactListApp;
+				PRODUCT_BUNDLE_IDENTIFIER = com.chetangadad.ContactListApp;
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				SWIFT_VERSION = 5.0;
 				TARGETED_DEVICE_FAMILY = "1,2";
@@ -305,13 +309,13 @@
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				CODE_SIGN_STYLE = Automatic;
-				DEVELOPMENT_TEAM = FP7V2F7LFP;
+				DEVELOPMENT_TEAM = 373573836D;
 				INFOPLIST_FILE = ContactListApp/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
 					"@executable_path/Frameworks",
 				);
-				PRODUCT_BUNDLE_IDENTIFIER = com.phani.ContactListApp;
+				PRODUCT_BUNDLE_IDENTIFIER = com.chetangadad.ContactListApp;
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				SWIFT_VERSION = 5.0;
 				TARGETED_DEVICE_FAMILY = "1,2";
